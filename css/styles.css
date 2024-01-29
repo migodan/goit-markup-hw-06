@@ -23,7 +23,7 @@ text-transform: uppercase;
 
 .header-logo-color {
 color:  #2E2F42;
-} 4D5AE5
+} 
 
 .header-menu-link {
 color: #2E2F42;
@@ -35,7 +35,7 @@ letter-spacing: 0.02em;
 
 .header-menu-link:hover {
     color: #404bbf;
-
+}
 .header-menu-link:focus {
     color: #404bbf;
 }
