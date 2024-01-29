@@ -34,8 +34,7 @@ letter-spacing: 0.02em;
 }
 
 .header-menu-link:hover {
-    color: bbf#404;
-}
+    color: #404bbf;
 
 .header-menu-link:focus {
     color: #404bbf;
