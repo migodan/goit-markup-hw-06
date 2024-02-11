@@ -19,18 +19,22 @@ p, h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0;
 }
 
+img {
+    display: block;
+}
+
 .container {
   width: 100%;  
-  max-width: 1128px;
-  margin: 0 auto;  
+  max-width: 1158px;
+  margin: 0 auto; 
+  padding: 15px 15px; 
 }
 
 
 /*=========HEADER==========*/
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0;
 }
 
 .header-container {
@@ -52,6 +56,7 @@ font-weight: 700;
 line-height: 1.17; /* 116.667% */
 letter-spacing: 0.03em;
 text-transform: uppercase;
+margin-right: 76px
 }
 
 .header-logo-color {
@@ -71,6 +76,7 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.5; /* 150% */
 letter-spacing: 0.02em;
+padding: 24px 0;
 }
 
 .header-menu-link:hover {
@@ -112,13 +118,12 @@ letter-spacing: 0.02em;
 /*============HERO===========*/
 
 .hero-container {
-    padding-top: 188px;
-    padding-bottom: 188px;
     text-align: center;
 }
 
 .hero {
-    background-color: #2e2f42;    
+    background-color: #2e2f42;  
+    padding: 188px 0;  
 }
 
 .hero-title {
@@ -136,6 +141,7 @@ margin: 0 auto;
 }
 
 .hero-btn {
+display: block;
 color: #FFF;
 font-family: Roboto, sans-serif;
 font-size: 16px;
@@ -145,10 +151,14 @@ line-height: 1.5; /* 150% */
 letter-spacing: 0.04em;
 background-color: #4D5AE5;
 cursor: pointer;
+min-width: 169px;
+height: 56px;
+border: none; 
 padding: 16px 32px;
 border-radius: 4px;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-margin-top: 48px;
+margin: 48px auto 0;
+
 
 }
 
@@ -170,6 +180,20 @@ margin-top: 48px;
 padding-top: 120px;
 padding-bottom: 120px;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 .features-list {
     display: flex;
@@ -204,6 +228,7 @@ letter-spacing: 0.02em;
 
 .team {
     background-color:  #F4F4FD;
+    padding: 120px 0;
 }
 
 .team-title {
@@ -216,21 +241,28 @@ font-weight: 700;
 line-height: 1.11; /* 111.111% */
 letter-spacing: 0.02em;
 text-transform: capitalize;
-padding-top: 120px;
 margin-bottom: 72px;
 }
 
 .team-list {
-    padding-bottom: 120px;
     display: flex;
     gap: 24px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item {
     background-color: #FFFFFF;
     width: 100%;
     min-width: 264px;
+    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
+background: var(--WHITE, #FFF);
+box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
+.team-item-container {
+    padding: 32px 0;
+    }
 
 .team-subtitile {
 color:  #2E2F42;
@@ -239,8 +271,8 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2; /* 120% */
 letter-spacing: 0.02em;
-margin-top: 32px;
 margin-bottom: 8px;
+text-align: center;
 }
 
 .team-text {
@@ -250,12 +282,16 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.5; /* 150% */
 letter-spacing: 0.02em;
-padding-bottom: 32px;
+text-align: center;
 }
 
 /*==============================*/
 
 /*==========PORTFOLIO==========*/
+
+.portfolio {
+    padding: 120px 0 120px 0;
+}
 
 .portfolio-title {
 color: #2E2F42;
@@ -265,7 +301,6 @@ font-weight: 700;
 line-height: 1.11; /* 111.111% */
 letter-spacing: 0.02em;
 text-transform: capitalize;
-padding-top: 120px;
 margin-bottom: 72px;
 }
 
@@ -273,18 +308,22 @@ margin-bottom: 72px;
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
-    padding-bottom: 120px;
     
 }
 
 .portfolio-item {
     width: 100%;
     max-width: 360px;
-    max-height: 420px;
-    border-right: 1px solid var(--CORNFLOWER, #E7E9FC);
-    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
-    border-left: 1px solid var(--CORNFLOWER, #E7E9FC);
-    
+    display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.portfolio-item-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px
 }
 
 .portfolio-subtitle {
@@ -293,7 +332,6 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2; /* 120% */
 letter-spacing: 0.02em;
-margin-top: 32px;
 margin-bottom: 8px;
 padding-right: 16px;
 padding-left: 16px;
@@ -305,7 +343,6 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.5; /* 150% */
 letter-spacing: 0.02em;
-padding-bottom: 32px;
 padding-right: 16px;
 padding-left: 16px;
 }
@@ -316,7 +353,7 @@ padding-left: 16px;
 
 .footer {
 background-color: #2e2f42;
-padding-top: 100px;
+padding: 100px 0 
 }
 
 .footer-logo {
@@ -349,7 +386,6 @@ background-color: #2E2F42;
 margin-top: 16px;
 width: 100%;
 max-width: 264px;
-padding-bottom: 100px;
 }
 
 /*==============================*/
