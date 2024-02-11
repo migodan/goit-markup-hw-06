@@ -22,9 +22,7 @@ p, h1,h2,h3,h4,h5,h6 {
 .container {
   width: 100%;  
   max-width: 1128px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
 
 
@@ -33,6 +31,17 @@ p, h1,h2,h3,h4,h5,h6 {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.header-container {
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    
 }
 
 .header-logo {
@@ -49,6 +58,13 @@ text-transform: uppercase;
 color:  #2E2F42;
 } 
 
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 76px;
+}
+
 .header-menu-link {
 color: #2E2F42;
 font-size: 16px;
@@ -62,6 +78,12 @@ letter-spacing: 0.02em;
 }
 .header-menu-link:focus {
     color: #404bbf;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .header-address {
@@ -92,10 +114,11 @@ letter-spacing: 0.02em;
 .hero-container {
     padding-top: 188px;
     padding-bottom: 188px;
+    text-align: center;
 }
 
 .hero {
-    background-color: #2e2f42;
+    background-color: #2e2f42;    
 }
 
 .hero-title {
@@ -109,7 +132,7 @@ line-height: 1.07; /* 107.143% */
 letter-spacing: 0.02em;
 background-color: #2E2F42;
 max-width: 496px;
-margin-bottom: 48px;
+margin: 0 auto;
 }
 
 .hero-btn {
@@ -124,6 +147,9 @@ background-color: #4D5AE5;
 cursor: pointer;
 padding: 16px 32px;
 border-radius: 4px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+margin-top: 48px;
+
 }
 
 .hero-btn:hover {
@@ -146,9 +172,13 @@ padding-bottom: 120px;
 }
 
 .features-list {
-}
+    display: flex;
+    gap: 24px;
+} 
 
 .features-item {
+    width: 100%;
+    min-width: 264px;
 }
 
 .features-subtitle {
@@ -192,10 +222,14 @@ margin-bottom: 72px;
 
 .team-list {
     padding-bottom: 120px;
+    display: flex;
+    gap: 24px;
 }
 
 .team-item {
     background-color: #FFFFFF;
+    width: 100%;
+    min-width: 264px;
 }
 
 .team-subtitile {
@@ -236,10 +270,21 @@ margin-bottom: 72px;
 }
 
 .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
     padding-bottom: 120px;
+    
 }
 
 .portfolio-item {
+    width: 100%;
+    max-width: 360px;
+    max-height: 420px;
+    border-right: 1px solid var(--CORNFLOWER, #E7E9FC);
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    border-left: 1px solid var(--CORNFLOWER, #E7E9FC);
+    
 }
 
 .portfolio-subtitle {
@@ -302,8 +347,8 @@ line-height: 1.5; /* 150% */
 letter-spacing: 0.02em;
 background-color: #2E2F42;
 margin-top: 16px;
-width: 264px;
-max-width: 100%;
+width: 100%;
+max-width: 264px;
 padding-bottom: 100px;
 }
 
