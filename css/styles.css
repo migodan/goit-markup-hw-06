@@ -35,10 +35,12 @@ img {
 
 .header {
     padding: 24px 0;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .header-container {
     display: flex;
+    padding: 0 15px
 }
 
 .header-nav {
@@ -357,13 +359,15 @@ padding: 100px 0
 }
 
 .footer-logo {
-    color: #4D5AE5 ;
+display: inline-block;
+color: #4D5AE5 ;
 font-family: Raleway, sans-serif;
 font-size: 18px;
 font-weight: 700;
 line-height: 1.17; /* 116.667% */
 letter-spacing: 0.03em;
 text-transform: uppercase;
+margin-bottom: 16px
 }
 .footer-logo-color {
     color: #F4F4FD;
@@ -383,7 +387,6 @@ font-weight: 400;
 line-height: 1.5; /* 150% */
 letter-spacing: 0.02em;
 background-color: #2E2F42;
-margin-top: 16px;
 width: 100%;
 max-width: 264px;
 }
