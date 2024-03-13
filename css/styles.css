@@ -409,6 +409,34 @@ flex-direction: column;
 justify-content: center;
 }
 
+.portfolio-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-overlay-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 32px 164px;
+    color: #F4F4FD;
+    background-color: #4D5AE5;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em; /* 150% */
+    letter-spacing: 0.32px;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-overlay:hover .portfolio-overlay-item {
+    transform: translateY(0%);
+}
+    
+
 .portfolio-item-container {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
