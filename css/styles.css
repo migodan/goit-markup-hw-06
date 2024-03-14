@@ -223,10 +223,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     width: 264px;
     height: 112px;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
     border-radius: 4px;
-    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
-    background: var(--CLOUD, #F4F4FD);
+    border: 1px solid  #8E8F99;
+    background-color: #f4f4fd; 
     margin-bottom: 8px;
 }
 
@@ -234,18 +236,18 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     width: 64px;
     height: 64px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
-    
+    position: relative;    
 }
 
 .rectangle-item-title {
     margin-bottom: 8px;
 }
 .rectangle-item-text {
+color:  #434455;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5em; /* 150% */
+letter-spacing: 0.32px;
 }
 
 /*==========FEATURES==========*/
@@ -338,10 +340,6 @@ margin-bottom: 72px;
 
 }
 
-.team-item:hover .network-icon-items {
-    background-color: #404BBF;
-}
-
 .team-item-container {
     padding: 32px 0;
     }
@@ -377,21 +375,34 @@ margin-bottom: 8px;
 .network-icon-items {
     display: block;   
     width: 40px;
-    height: 40px;
+    height: 40px;  
+}
+
+.icon-link{
+    display: flex;
+    widows: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
     border-radius: 50%;
-    background-color: #4D5AE5; 
+    align-items: center;
+    justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icon-link:hover {
+    background-color: #404bbf;
+}
+
+.icon-link:focus {
+    background-color: #404bbf;
+}
 
 .network-icon {
     width: 16px;
     height: 16px;
     display: block;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    fill: #f4f4fd;
 }
 
 /*==============================*/
@@ -524,7 +535,10 @@ max-width: 264px;
 
 .footer-container{
     display: flex;
-    
+}
+
+.logo-footer {
+    margin-right: 120px;
 }
 
 .footer-icon {
@@ -532,21 +546,21 @@ max-width: 264px;
 }
 
 .footer-network {
-    margin-left: 120px;
+    
 }
 
 .footer-title {
 display: block;
-    color:  #FFF;
+color: #FFFFFF;
 font-size: 16px;
-font-style: normal;
 font-weight: 500;
-line-height: 24px; /* 150% */
-letter-spacing: 0.32px;
+line-height: 1.5em; /* 150% */
+letter-spacing: 0.02em;
 margin-bottom: 16px;
 }
 
-.icons-network:hover {
+
+.footericon:hover {
 background-color: rgba(49, 208, 170, 1);
 }
 /*==============================*/
