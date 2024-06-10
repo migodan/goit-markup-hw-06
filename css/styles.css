@@ -616,6 +616,7 @@ background-color: rgba(49, 208, 170, 1);
     right: 24px;
     width: 24px;
     height: 24px;
+    border: none;
     border-radius: 50%;
     background: #E7E9FC;
     stroke-width: 1px;
@@ -762,4 +763,8 @@ letter-spacing: 0.48px;
 } 
 
 .review-form-submit {
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
  
