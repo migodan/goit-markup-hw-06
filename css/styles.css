@@ -711,3 +711,55 @@ font-weight: 400;
 line-height: 14px; /* 116.667% */
 letter-spacing: 0.48px;
 }
+
+.review-form-checkbox-label {
+    color: #8E8F99;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 116.667% */
+    letter-spacing: 0.48px;
+}
+
+.privacy-policy-link {
+    color:  #4D5AE5;
+    family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    text-decoration-line: underline;
+}
+
+.review-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+
+.review-form-own-chekbox {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    cursor: pointer;
+    fill: transparent;
+    
+}
+
+.review-form-checkbox:checked + .review-form-checkbox-label .review-form-own-chekbox {
+    background-color: #404BBF;
+    
+}
+
+.review-form-checkbox:focus + .review-form-checkbox-label .review-form-own-chekbox{
+    outline: 1px solid #404BBF;
+}
+
+.review-form-own-chekbox-icon {
+      
+} 
+
+.review-form-submit {
+ 
